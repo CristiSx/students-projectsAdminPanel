@@ -4,9 +4,7 @@ import {
   Routes,
  
 } from "react-router-dom";
-import Vizualizare from "./routes/views/vizualizare";
 import './App.css'
-import Admin from "./routes/views/admin";
 import Home from "./routes/views/home";
 import StudentiTable from "./routes/views/vizualizare/studenti"
 import ProiecteTable from "./routes/views/vizualizare/proiecte"
@@ -22,7 +20,7 @@ function App() {
      
        <Router>
          <Routes>
-            <Route path="/vizualizare" element={<Vizualizare />} />
+            
             <Route path="/vizualizare/studenti" element={<StudentiTable />} />
             <Route path="/vizualizare/proiecte" element={<ProiecteTable />} />
             <Route path="/vizualizare/inscrieri" element={<InscrieriTable />} />
@@ -30,7 +28,7 @@ function App() {
             <Route path="/inserare/studenti" element={<InserareStudeti />} />
             <Route path="/inserare/proiecte" element={<InserareProiecte />} />
             <Route path="/inserare/inscriere" element={<InserareInscriere />} />
-            <Route path="/admin" element={<Admin />} />
+           
             <Route path="/" element={<Home />} />
          </Routes>
        </Router>
